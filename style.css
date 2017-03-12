@@ -1,0 +1,380 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.heading:after {
+	content: " ";
+	background-color: rgb(255, 193, 7);
+	height: 6px;
+	width: 60px;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 80px;
+}
+
+.progress{
+	position: absolute;
+	top: 0;
+	margin: 0 auto;
+	background-color: transparent;
+	width: 100%;
+}
+
+.progress .progress-bar {
+	position: absolute;
+	margin: 0 auto;
+	background-color: rgb(255, 193, 7);
+	opacity: 0;
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    z-index: 1;
+}
+
+@keyframes animateBar {
+    0% {
+    	transform: translateX(-100%);
+    	opacity: 1;
+    }
+    100% {
+    	transform: translateX(0);
+    	opacity: 1;
+    }
+}
+
+.nav__left li {
+	float: right;
+}
+
+.navbar__left--lg {
+	position: relative;
+}
+
+.nav__left {
+	z-index: 1;
+	position: absolute;
+	top: 10vh;
+	right: 0;
+	background-color: rgb(255, 102, 48);
+	width: 400px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 100px;
+}
+
+.navbar__right--lg {
+	position: relative;
+}
+
+.nav__right ul li a:first-child {
+	padding-left: 0;
+}
+
+.nav__left .navbar-nav > li > a {
+	color: rgba(33, 33, 33, 0.6);
+}
+
+.nav__right .navbar-nav > li > a {
+	color: rgba(255, 102, 48, 0.8);
+}
+
+.nav__right {
+	z-index: 1;
+	top: 10vh;
+	left: 0;
+	position: absolute;
+	background-color: rgb(33, 33, 33);
+	width: 400px;
+	border: 0;
+	border-radius: 0;
+	overflow: hidden;
+	text-align: left;
+}
+
+.navbar__right--sm {
+	position: absolute;
+	top: 5vh;
+	right: 5vh;
+	border: 0;
+	background-color: transparent;
+}
+
+button.navbar-toggle.collapsed {
+	border-radius: 0;
+	border: 0;
+}
+
+button.navbar-toggle.collapsed:hover {
+	background-color: rgb(33, 33, 33);
+}
+
+button.navbar-toggle.collapsed:hover .icon-bar {
+	background-color: rgb(255, 102, 48);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:  rgb(33, 33, 33);
+}
+
+.navbar-collapse {
+	background-color:  rgb(33, 33, 33);
+}
+
+.navbar__right--sm .navbar-nav li > a {
+	color: rgb(255, 102, 48);
+	z-index: 1;
+}
+
+.heading {
+	background-color: rgb(255, 193, 7);
+	height: 2px;
+	width: 220px;
+	text-align: center;
+	margin: 20px auto 75px;
+	position: relative;
+}
+
+.hero__background {
+	background: url("img/Porsche.jpg") center center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+}
+
+.hero__column--right {
+	position: absolute;
+	right: 0;
+	background-color: rgba(255, 102, 48, 0.8);
+	height: 100vh;
+	padding-left: 0;
+}
+
+.hero__column--left {
+	position: absolute;
+	left: 0;
+	background-color: rgba(33, 33, 33, 0.6);
+	height: 100vh;	
+	padding-right: 0;
+}
+
+.hero__title--left,
+.hero__title--right {
+	position: absolute;
+}
+
+.hero__title--left {
+	bottom: 40vh;
+	right: 0;
+	border-left: 10px solid rgb(255, 102, 48);
+	padding-left: 1%;
+	min-width: 45%;
+}
+
+.hero__title--left h3 {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.hero__title--left h3,
+.hero__title--left h1 {
+	color: rgb(255, 102, 48);
+}
+
+.left__title--lg h1 {
+	font-size: 100px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.left__title--md h1 {
+	font-size: 80px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.left__title--sm h1 {
+	font-size: 70px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.left__title--xs h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.hero__title--right {
+	bottom: 40vh;
+	left: 0;
+	min-width: 80%;
+}
+
+.hero__title--right h1 {
+	color: rgb(33, 33, 33);
+	margin: 0;
+}
+
+.right__title--lg h1 {
+	font-size: 100px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.right__title--md h1 {
+	font-size: 80px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.right__title--sm h1 {
+	font-size: 70px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.right__title--xs h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.workers__img {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.workers__img img {
+	width: 100%;
+	height: 230px;
+}
+
+.workers__img h3 {
+	padding-bottom: 5%;
+}
+
+.workers__title h2,
+.money__info h2,
+.contact__info h2,
+.about__title h2 {
+	font-size: 60px;
+	font-weight: 700px;
+	line-height: 95px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.workers__title p,
+.about__title p {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.about__item {
+	padding-top: 20px;
+}
+
+.glyphicon {
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	color: rgb(255, 193, 7);
+	margin-right: 10px;
+}
+
+h4.media-heading  {
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+.table {
+	text-align: center;
+}
+
+.table h3 {
+	text-align: center;
+}
+
+.table tbody tr td, 
+.table tbody tr th {
+    border: none;
+}
+
+.circle {
+  width:60px;
+  height:60px;
+  border-radius:60px;
+  font-size:20px;
+  color:#fff;
+  line-height:60px;
+  text-align:center;
+  background:rgb(255, 102, 48);
+  margin: 10px auto;
+}
+
+.contact {
+	font-weight: 300;
+	text-align: center;
+	font-size: 20px;
+}
+
+.contact__form {
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+label {
+	font-weight: 300;
+}
+
+input,
+textarea {
+	border: none;
+	outline: none;
+	border-radius: 0;
+	border-bottom: 2px dashed rgb(33, 33, 33);
+	text-align: center;
+	cursor: text;
+}
+
+textarea {
+	text-align: left;
+	resize: none;
+	width: 90%;
+}
